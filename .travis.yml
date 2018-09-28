@@ -7,4 +7,6 @@ python:
 install:
   - pip install .
   - pip install flake8
-script: flake8 mockme/main.py
+script:
+  - flake8 mockme/main.py
+  - ./tests/run_cli_tests.sh
