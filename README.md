@@ -1,5 +1,6 @@
 ## Mock Me!
 [![Build Status](https://travis-ci.com/Komish/mockme.svg?branch=master)](https://travis-ci.com/Komish/mockme)
+
 With the up and coming of the latest meme featuring our beloved spongebob, this script exists for use cases such as IRC and Slack channel - to link the spongebob meme and translate phrases into alternating cases.
 
 That's literally all it does.
