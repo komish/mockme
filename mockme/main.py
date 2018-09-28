@@ -2,17 +2,17 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import string
 import os
 
+
 def help_text():
-    help_text = \
-"""
-MoCk YoUr FrIeNdS, YoUr WiFe, AnD YoUr KiDs, ThIs Is A UtIlItY To 
+    help_text = """
+MoCk YoUr FrIeNdS, YoUr WiFe, AnD YoUr KiDs, ThIs Is A UtIlItY To
 AnNoY ThE MaSsEs! JuSt TyPe A PhRaSe AnD SeE WhAt HaPpEnS!
 """
     usage = "usage: {} phrase goes here, just type away and hit enter!\n"
     print(usage.format(os.path.basename(sys.argv[0])), help_text)
+
 
 def main():
     image_url = 'https://goo.gl/g54u4V'
@@ -24,7 +24,7 @@ def main():
         print(image_url, end=": ")
         for word in sys.argv[1:]:
             word = list(word.lower())
-            for index in range(0,len(word)):
+            for index in range(0, len(word)):
                 if index == 0 or index % 2 == 0:
                     word[index] = word[index].upper()
             new_word = str()
